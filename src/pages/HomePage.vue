@@ -29,7 +29,7 @@ export default {
       } else {
         API.findUser(value).then(res => {
           console.log(res);
-          if (res.data === null) {
+          if (res.data === "") {
             this.$message.error(`用户${value}不存在`);
           } else {
             this.$router.push(`/user/${res.data}`);

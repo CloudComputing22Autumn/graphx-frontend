@@ -5,7 +5,6 @@ const instance = axios.create({
 });
 
 function findUser(login) {
-    console.log(login);
     return instance.get("/find", {
         params: {
             login,
@@ -13,8 +12,26 @@ function findUser(login) {
     });
 }
 
+function findCommunity(login){
+    return instance.get("/community", {
+        params:{
+            login
+        }
+    });
+}
+
+function findLatentFriends(login){
+    return instance.get("/friends", {
+        params:{
+            login
+        }
+    });
+}
+
 const API = {
     findUser,
+    findCommunity,
+    findLatentFriends
 };
 
 export default API;
