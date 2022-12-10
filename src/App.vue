@@ -26,4 +26,12 @@ export default {
   width: 100%;
   height: 100%;
 }
+
+html{
+  height: 100%;
+}
+
+body{
+  height: 100%;
+}
 </style>

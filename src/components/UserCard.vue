@@ -16,7 +16,7 @@
           {{ userVO["location"] }}
         </div>
       </div>
-      <div class="bio">
+      <div class="bio" :title="userVO['bio']">
         {{ userVO["bio"] }}
       </div>
     </div>
@@ -42,7 +42,7 @@ export default {
 
 <style scoped>
 .card-demo {
-  width: 240px;
+  width: 260px;
   margin-left: 24px;
   transition-property: all;
 }
